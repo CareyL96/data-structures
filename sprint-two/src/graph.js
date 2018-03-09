@@ -56,5 +56,3 @@ Graph.prototype.forEachNode = function(cb) {
  */
 
 var exampleGraph = new Graph();
-
-exampleGraph.forEachNode(exampleGraph.addEdge(5, 10))
