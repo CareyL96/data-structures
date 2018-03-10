@@ -46,13 +46,19 @@ BinarySearchTree.prototype.contains = function(value) {
 }
 
 BinarySearchTree.prototype.depthFirstLog = function(cb) {
-  
+// base case
+  // if this.left !== null
+    // traverse 
+    cb(this.value);
+    if (this.left !== null) {
+      this.left.depthFirstLog(cb);
+    } 
+    
+    if (this.right !== null) {
+      this.right.depthFirstLog(cb);
+    }
 }
 
 /*
  * Complexity: What is the time complexity of the above functions?
  */
-
-var rootNode = BinarySearchTree(8);
-
-rootNode.insert(5);
